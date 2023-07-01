@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #222;
+  line-height: 6.4rem;
+}
+
+h2 {
+  font-size: 4.6rem;
+  color: #222;
+  line-height: 6.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+  color: #222;
+}
+
+h6 {
+}
+
+.desc {
+  font-size: 1.6rem;
+  color: #465b52;
+}
+
+.section-p1 {
+  padding: 4rem 8rem;
+}
+
+.section-m1 {
+  padding: 4rem 0;
+}
+
+.btn{
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1.5rem 3rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+/* ======== header ========== */
+.header {
+  padding: 2rem 8rem;
+  background: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-body__ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1px;
+}
+
+.header-body__li {
+  position: relative;
+}
+
+.header-li-a--active::after,
+.header-li-a:hover::after {
+  content: '';
+  width: 25%;
+  height: 0.2rem;
+  border-radius: 20px;
+  background-color: #088178;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 1.8rem;
+}
+
+#mobile{
+  display: flex;
+  align-items: center;
+  
+}
+
+#mobile i{
+  color: #1a1a1a;
+  font-size: 2.4rem;
+  padding-left: 2rem;
+  display: none;
+}
+
+#colse{
+  text-align: center;
+  display: none;
+}
+
+.fa-xmark{
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.1rem;
+  border: 1px solid #666;
+  position: absolute;
+  color: #333;
+  top: 0;
+  right: 0;
+  margin: 2rem;
+}
+
+.fa-xmark:hover{
+  color: #999;
+}
+
+.header-li-a {
+  padding: 0.8rem 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3 ease;
+}
+
+.header-li-a--active,
+.header-li-a:hover {
+  color: #088178;
+}
+
+/* ======== hero ========= */
+.hero {
+}
+
+.hero-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 8rem;
+  background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/hero4.png?raw=true);
+  background-position: top 25% right 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+}
+
+.hero-desc {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.hero-h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.hero-h1 {
+  font-size: 4.2rem;
+  font-weight: 600;
+  color: #088178;
+}
+
+.hero-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/button.png?raw=true);
+  background-repeat: no-repeat;
+  padding: 1.4rem 8rem 1.4rem 6.5rem;
+  color: #088178;
+  font-size: 1.6rem;
+}
+
+/* =========== feature ========== */
+.fe-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+  justify-content: space-between;
+  column-gap: 1.5rem;
+}
+
+.fe-box {
+  width: 100%;
+  text-align: center;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  padding: 2.5rem 1.5rem;
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+}
+
+.fe-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.fe-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+.fe-desc {
+  display: inline-block;
+  padding: 0.9rem 0.8rem 0.6rem 0.8rem;
+  line-height: 1;
+  border-radius: 4px;
+  color: #088178;
+  background-color: #fddde4;
+}
+
+.fe-box:nth-child(2) .fe-desc {
+  background-color: #cdebbc;
+}
+
+.fe-box:nth-child(3) .fe-desc {
+  background-color: #d1e8f2;
+}
+
+.fe-box:nth-child(4) .fe-desc {
+  background-color: #cdd4f8;
+}
+
+.fe-box:nth-child(5) .fe-desc {
+  background-color: #f6dbf6;
+}
+
+.fe-box:nth-child(6) .fe-desc {
+  background-color: #fff2e5;
+}
+
+/* ===== products1 ===== */
+.product1 {
+  text-align: center;
+}
+
+.pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1.5rem;
+}
+
+.pro-container__pro {
+  width: 20%;
+  min-width: 250px;
+  padding: 1rem 1.2rem;
+  border: 1px solid #cce7d0;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 0 1.5rem;
+  transition: 0.2s ease;
+  margin-bottom: 1.5rem;
+ 
+}
+
+.pro-container__pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.pro-desc {
+  color: #606063;
+  padding-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.pro-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.pro-box {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.pro-box-p {
+  font-size: 1.2rem;
+  color: #606063;
+}
+
+.pro-box-h5 {
+  padding-top: 0.7rem;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+}
+
+.pro-left__star .fa-star {
+  font-size: 1.2rem;
+  color: rgba(243, 181, 25, 1);
+}
+
+.pro-left__p {
+  padding-top: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #088178;
+}
+
+.pro-box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pro-link .fa-solid {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4;
+  border-radius: 50%;
+  background-color: #e8f6ea;
+  font-size: 1.8rem;
+  color: #088178;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========== banner =========== */
+.banner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b2.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  background-position: center;
+}
+
+.banner-h4 {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.banner-h2 {
+  color: #fff;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.banner-h2 span {
+  color: #ef3636;
+}
+
+.banner-btn:hover{
+  background: #088178;
+  color: #fff;
+}
+
+/* ============== sm-banner ============== */
+.sm-banner-body{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem
+}
+
+.sm-banner-box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 58rem;
+  height: 50vh;
+  background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b17.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  flex: 1;
+}
+
+.sm-banner-box:nth-child(2) {
+  background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b10.jpg?raw=true);
+}
+
+.smbanner-box__btn:hover{
+  background: #088178;
+  color: #fff;
+}
+
+.sm-banner-box__h4{
+  color: #fff;
+}
+
+.sm-banner-box__h2{
+  color: #fff;
+font-size: 4.5rem;
+font-weight: 700;
+}
+
+.sm-banner-box__p{
+  color: #fff;
+  padding-bottom: 1.5rem;
+}
+
+.smbanner-box__btn{
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.smbanner-box__btn:hover{
+  border: 1px solid #088178;
+}
+
+/* ======== banner3 ======== */
+.banner3-body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 6rem;
+  gap: 1.5rem;
+
+}
+
+.banner3-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  background-size: cover;
+  min-width: 30%;
+  height: 30vh;
+  background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b7.jpg?raw=true);
+  background-position: center;
+  padding: 3rem;
+  flex: 1;
+}
+
+.banner3-h2{
+  color: #fff;
+  font-weight: 900;
+  font-size: 2.2rem;
+}
+
+.banner3-h3{
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ec544e;
+}
+
+.banner3-box:nth-child(2){
+  background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b4.jpg?raw=true);
+}
+
+.banner3-box:nth-child(3){
+  background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b18.jpg?raw=true);
+}
+
+/* ============= newletter ============= */
+.newletter{
+  margin-top: 4rem;
+  align-items: center;
+  background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b14.png?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+}
+.new-body{
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.new-h4{
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.new-p{
+  margin-top: 1.5rem;
+  color: #818ea0;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.new-p span{
+  color: #ffdb27;
+}
+
+.form{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-button{
+  color: #fff;
+  background: #088178;
+  white-space: nowrap;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.new-form-input{
+ height: 4.6rem;
+ padding: 0 1.25em;
+  outline: none;
+  font-size: 1.4rem;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  line-height: 3.125rem;
+border-top-right-radius: 0 ;
+border-bottom-right-radius: 0 ;
+}
+
+/* ========== footer ========== */
+.footer-body{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-li-0{
+  color: #041e42;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.footer-ul:first-child .footer-li-0{
+  margin-top: 1.6rem;
+}
+
+.footer-li{
+  color: #959aa1;
+  font-weight: 400;
+}
+
+.footer-li + .footer-li{
+  margin-top: 0.7rem;
+}
+
+.footer-li span{
+  color: #063270;
+  font-weight: 500;
+}
+
+.footer-box1-icon .fa-brands {
+  margin-right: 0.3rem;
+}
+
+.footer-box1-icon .fa-brands:hover{
+  color: #088178;
+  cursor: pointer;
+}
+
+.footer-pay{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.2rem;
+}
+
+.footer-pay__img{
+  border: 1px solid #088178;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-visa:hover,
+.footer-pay:hover, 
+.footer-pay__img:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.footer-ul:last-child .footer-li{
+  margin-bottom: 1.5rem;
+}
