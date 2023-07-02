@@ -1,4 +1,4 @@
-/* máy tính bảng và điện thoại */
+/* máy tính bảng và máy tính màn hình nhỏ */
 @media screen and (max-width: 991px) {
     .section-p1 {
         padding: 4rem 4rem;
@@ -70,26 +70,32 @@
     /* =================================================================================================================================== */
 
     /* =============== blog.html ================ */
-    /* .blog{
-  padding: 7rem 12rem;
+    .blog {
+        padding: 7rem 12rem;
+    }
+
+    .blog-box {
+        flex-direction: column;
+    }
+
+    .blog-img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .blog-img__name {
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+    }
+
+    .blog-right {
+        margin-top: 1.5rem;
+        width: 100%;
+    }
 }
 
-.blog-box{
-  flex-direction: column;
-}
-
-.blog-img{
-  width: 100%;
-}
-
-.blog-img__name{
-  width: 100%;
-  height: 80vh;
-  object-fit: cover;
-} */
-}
-
-/* Điện thoại */
+/* Điện thoại  và máy tính bảng*/
 @media screen and (max-width: 767px) {
     .layout {
         position: fixed;
@@ -161,6 +167,18 @@
     .prodetails-details {
         width: 100%;
     }
+
+   .about-body{
+    flex-direction: column;
+   }
+
+   .about-img{
+    width: 100%;
+   }
+
+   .about-video{
+    width: 100%;
+   }
 }
 /* màn hình nhỏ */
 @media screen and (max-width: 477px) {
@@ -198,5 +216,20 @@
     .sm-banner-box {
         height: 40vh;
         background-position: 65%;
+    }
+
+    /* ================================================================================================= */
+/* ================ blog.html ================== */
+ .blog {
+        padding: 7rem 3rem;
+    }
+
+    .blog-img__name {
+        height: 30rem;
+        object-fit: cover;
+    }
+
+    .about-app-h1{
+      font-size: 3.5rem;
     }
 }

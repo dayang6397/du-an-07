@@ -74,6 +74,7 @@ h6 {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 5;
 }
 
 .navbar {
@@ -716,26 +717,29 @@ h6 {
 /* =================================================================================================================================== */
 
 /* =============== blog.html ================ */
-.blog {
-    padding: 15rem 15rem 0 15rem;
-}
-
-.blog-box {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 .blog-hero-body {
     background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b19.jpg?raw=true);
     width: 100%;
-    height: 40vh;
+    height: 30rem;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+/* ==================  blog ==================== */
+.blog {
+    padding: 15rem 15rem 0 15rem;
+}
+
+.blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 9rem;
 }
 
 .blog-img {
@@ -745,16 +749,20 @@ h6 {
 
 .blog-img__name {
     width: 100%;
-    height: 30rem;
+    height: 40rem;
     object-fit: cover;
+    border-radius: 3px;
 }
 
 .blog-right {
-    width: 50%;
+    width: 48%;
 }
 
 .blog-right-p {
+  width: 100%;
+  font-weight: 500;
     color: rgb(136, 134, 134);
+    margin: 1.5rem 0 1.5rem;
 }
 
 .blog-right-a {
@@ -778,4 +786,95 @@ h6 {
     right: -5.5rem;
     bottom: 50%;
     transform: translateY(-50%);
+}
+
+.blog-right-a:hover::after {
+    background-color: #088178;
+}
+
+.blog-box-h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 7rem;
+    font-weight: 600;
+    color: #c9cbce;
+    z-index: -9;
+}
+
+.blog-right-h4 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+/* =================================================================================================================================== */
+
+/* =============== about.html ================ */
+.about-hero-body{
+  background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/about/banner.png?raw=true);
+    width: 100%;
+    height: 30rem;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* =============== about-head ================ */
+.about-body{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.about-img{
+  width: 50%;
+  height: auto;
+}
+
+.about-h2
+{
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.about-p{
+  margin-top: 1rem;
+  color: #606063;
+}
+
+.about-bot abbr{
+  display: block;
+  margin-top: 2.5rem;
+  color: #088178;
+}
+
+.about-bot marquee{
+  color: #ec544e;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+/* =============== about-app ================== */
+.about-app{
+  text-align: center;
+}
+
+.about-video{
+  width: 70%;
+  height: 100%;
+  margin: 3rem auto 0;
+}
+
+.about-video video{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.about-download{
+  color: #088178;
+  font-weight: 600;
 }
