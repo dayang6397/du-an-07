@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- ====== link css ======== -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/screen.css" />
+    <!-- ========== link icon =========== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ====== header ======== -->
+    <section class="header" id="header">
+      <div class="container">
+        <div class="navbar">
+          <img
+            src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/logo.png?raw=true"
+            alt=""
+            class="header-logo" onclick="window.location.href='index.html';"
+          />
+          <ul class="header-body__ul active">
+            <li class="header-body__li header-body__li--active">
+              <a href="index.html" class="header-li-a">Home</a>
+            </li>
+            <li class="header-body__li">
+              <a href="shop.html" class="header-li-a">Shop</a>
+            </li>
+            <li class="header-body__li">
+              <a href="blog.html" class="header-li-a">Blog</a>
+            </li>
+            <li class="header-body__li">
+              <a href="about.html" class="header-li-a">About</a>
+            </li>
+            <li class="header-body__li">
+              <a href="contact.html" class="header-li-a header-li-a--active"
+                >Contact</a
+              >
+            </li>
+            <li class="header-body__li">
+              <a href="cart.html" class="header-li-a"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <a href="#!" id="colse"><i class="fa-solid fa-xmark"></i></a>
+          </ul>
+          <!-- mobile -->
+          <div class="layout"></div>
+          <div id="mobile">
+            <i id="mobile-bar" class="fas fa-outdent"></i>
+            <a href="cart.html" class="header-li-a__mobile"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ hero =============== -->
+    <section class="hero">
+      <div class="contact-hero-body">
+        <h2 class="shop-hero-h2">#lest's_talk</h2>
+        <p class="shop-hero-p desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+          fugiat veniam nemo.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============== contact =============== -->
+    <section class="contact section-p1" id="contact">
+      <div class="contact-body">
+        <div class="contact-right">
+          <div class="contact-p1">GET IN TOUCH</div>
+          <h2 class="contact-h2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            corrupti sit veniam!
+          </h2>
+          <h4 class="contact-h4">Head Office</h4>
+          <div class="contact-item">
+            <i class="fa-regular fa-map"></i
+            ><span class="contact-item-p"
+              >56 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Eaque, facilis.</span
+            >
+          </div>
+          <div class="contact-item">
+            <i class="fa-regular fa-envelope"></i
+            ><span class="contact-item-p">contact@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i
+            ><span class="contact-item-p">+63 98999996399</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-regular fa-clock"></i
+            ><span class="contact-item-p"
+              >Monday to Saturday: 9.00am to 16.pm</span
+            >
+          </div>
+        </div>
+
+        <!-- map -->
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15242.221831302419!2d105.82071591927846!3d21.020648948193596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab79c8a797e5%3A0x8609b40dcf66d154!2zTGEgVGjDoG5o!5e0!3m2!1szh-CN!2sph!4v1688361406040!5m2!1szh-CN!2sph"
+            width="100%"
+            height=""
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ form-deatails ================== -->
+    <div class="deat section-p1">
+      <div class="deat-body">
+        <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="POST" class="form-deatails " autocomplete="off">
+          <p class="deat-form-p">LEAVE A MESSAGE</p>
+          <h2 class="deat-form-h2">We love to hear from you</h2>
+          <div class="deat-group-input">
+            <input type="text"
+           name="text" 
+           id="text" 
+           class="deat-input"
+           placeholder="Your Name">
+    
+           <input type="email"
+           name="email" 
+           id="email" 
+           class="deat-input"
+           placeholder="E-mail">
+    
+           <input type="text"
+           name="text1" 
+           id="text2" 
+           class="deat-input"
+           placeholder="Subject">
+    
+           <textarea name="box" id="box2" cols="30" rows="6" 
+           placeholder="Your Message"
+           class="deat-input"></textarea>
+          </div>
+          <button class="deat-form-btn btn">Submit</button>
+        </form>
+
+        <!-- ping-jia -->
+        <div class="pingjia">
+          <!-- rất đặc biệt -->
+          <!-- group đặc biệt -->
+          <div class="pingjia-group">
+            <figure>
+              <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.15752-9/349022541_239591858792980_4692781198613612345_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeE2uIfEODqQi4S40X86NfGfBaSezqWqmOgFpJ7OpaqY6OB9rwD3AZ4bbYq8j6ay-1HgEvPJi8QleZ9YL5VVReTK&_nc_ohc=F4O_QnsgnIcAX-8OfRh&_nc_ht=scontent-hkg4-1.xx&oh=03_AdQ594PFmhNx0pTxIvb4ZogWmHhzwocR34_NwhE1WBkxyA&oe=64C9D117" alt="" class="pingjia-avatar">
+            </figure>
+            <div class="pingjia-group-text">
+              <p class="pingjia-name">Dayang</p>
+            <p class="pingjia-text">Lorem ipsum dolor sit</p>
+            <p class="pingjia-text">Phone: + 0999999999</p>
+            <p class="pingjia-text">Email: contact@exmple.com</p>
+            </div>
+          </div>
+
+
+          <!-- group đặc biệt -->
+          <div class="pingjia-group">
+            <figure>
+              <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.15752-9/355827104_587547783489920_4533932088230800554_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFZYRuRYYwDchwcoBjOymIvqxtm4O8EgBWrG2bg7wSAFYej3ViB9qGJyC2kRIB8tkSx9iNtJyQAZACJiQX4OJHU&_nc_ohc=OMTds97c1PUAX_JLdok&_nc_ht=scontent-hkg4-1.xx&oh=03_AdSlGGlnDjmAZx3R7WNa3akoQHXZm5Lkv7bd9pf5dby4Pg&oe=64C9CB07" alt="" class="pingjia-avatar">
+            </figure>
+            <div class="pingjia-group-text">
+              <p class="pingjia-name">Alyana Lucio</p>
+            <p class="pingjia-text">Lorem ipsum dolor sit</p>
+            <p class="pingjia-text">Phone: + 0999999999</p>
+            <p class="pingjia-text">Email: contact@exmple.com</p>
+            </div>
+          </div>
+
+
+          <!-- group1 -->
+          <div class="pingjia-group">
+            <figure>
+              <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/people/1.png?raw=true" alt="" class="pingjia-avatar">
+            </figure>
+            <div class="pingjia-group-text">
+              <p class="pingjia-name">John Doe</p>
+            <p class="pingjia-text">Lorem ipsum dolor sit</p>
+            <p class="pingjia-text">Phone: + 000 123 456 789</p>
+            <p class="pingjia-text">Email: contact@exmple.com</p>
+            </div>
+          </div>
+
+          <!-- group2 -->
+          <div class="pingjia-group">
+            <figure>
+              <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/people/2.png?raw=true" alt="" class="pingjia-avatar">
+            </figure>
+            <div class="pingjia-group-text">
+              <p class="pingjia-name">William Smith</p>
+            <p class="pingjia-text">Lorem ipsum dolor sit</p>
+            <p class="pingjia-text">Phone: + 000 123 456 789</p>
+            <p class="pingjia-text">Email: contact@exmple.com</p>
+            </div>
+          </div>
+
+          <!-- group3 -->
+          <div class="pingjia-group">
+            <figure>
+              <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/people/3.png?raw=true" alt="" class="pingjia-avatar">
+            </figure>
+            <div class="pingjia-group-text">
+              <p class="pingjia-name">John Doe</p>
+            <p class="pingjia-text">Lorem ipsum dolor sit</p>
+            <p class="pingjia-text">Phone: + 000 123 456 789</p>
+            <p class="pingjia-text">Email: contact@exmple.com</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============= newletter ============== -->
+    <section class="newletter" id="newletter">
+      <div class="new-body section-p1">
+        <div class="newstext">
+          <h4 class="new-h4">Lorem ipsum dolor sit amet.</h4>
+          <p class="new-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing
+            <span>elit. Velit, quo?</span>
+          </p>
+        </div>
+        <div class="form">
+          <input
+            class="new-form-input"
+            type="text"
+            name=""
+            id=""
+            placeholder="Your email address"
+          />
+          <button class="new-button btn">Sign Up</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== footer ============== -->
+    <footer class="footer section-p1" id="footer">
+      <div class="footer-body">
+        <!-- box1 -->
+        <ul class="footer-ul">
+          <img
+            src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/logo.png?raw=true"
+            alt=""
+            class="header-logo"
+          />
+          <li class="footer-li-0">Contact</li>
+          <li class="footer-li">
+            <span>Address:</span> 562 Welington Road, Street 32, San Francisco
+          </li>
+          <li class="footer-li">
+            <span>Phone:</span> +01 2222 365/(+91)01 23456789
+          </li>
+          <li class="footer-li">
+            <span>Hours:</span> 10:00 - 18:00, Mon - Sat
+          </li>
+          <li class="footer-li-0">Follow Us</li>
+          <div class="footer-box1-icon">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </ul>
+
+        <!-- box2 -->
+        <ul class="footer-ul">
+          <li class="footer-li-0">About</li>
+          <li class="footer-li">About Us</li>
+          <li class="footer-li">Delivery Information</li>
+          <li class="footer-li">Privacy Policy</li>
+          <li class="footer-li">Terms & Conditions</li>
+          <li class="footer-li">Contact Us</li>
+        </ul>
+
+        <!-- box3 -->
+        <ul class="footer-ul">
+          <li class="footer-li-0">My Account</li>
+          <li class="footer-li">Sign In</li>
+          <li class="footer-li">View Cart</li>
+          <li class="footer-li">My Wishlist</li>
+          <li class="footer-li">Track My Order</li>
+          <li class="footer-li">Help</li>
+        </ul>
+
+        <!-- box4 -->
+        <ul class="footer-ul">
+          <li class="footer-li-0">Install App</li>
+          <li class="footer-li">From App Store or Google Play</li>
+          <div class="footer-pay">
+            <img
+              src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/pay/play.jpg?raw=true"
+              alt=""
+              class="footer-pay__img"
+            />
+            <img
+              src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/pay/app.jpg?raw=true"
+              alt=""
+              class="footer-pay__img"
+            />
+          </div>
+          <li class="footer-li">Secured Payment Gateways</li>
+          <img
+            src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/pay/pay.png?raw=true"
+            alt=""
+            class="footer-visa"
+          />
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

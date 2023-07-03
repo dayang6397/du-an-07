@@ -26,6 +26,7 @@
                         src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/logo.png?raw=true"
                         alt=""
                         class="header-logo"
+                        onclick="window.location.href='index.html';"
                     />
                     <ul class="header-body__ul active">
                         <li class="header-body__li header-body__li--active">
@@ -38,11 +39,7 @@
                             <a href="blog.html" class="header-li-a">Blog</a>
                         </li>
                         <li class="header-body__li">
-                            <a
-                                href="about.html"
-                                class="header-li-a header-li-a--active"
-                                >About</a
-                            >
+                            <a href="about.html" class="header-li-a">About</a>
                         </li>
                         <li class="header-body__li">
                             <a href="contact.html" class="header-li-a"
@@ -50,7 +47,9 @@
                             >
                         </li>
                         <li class="header-body__li">
-                            <a href="cart.html" class="header-li-a"
+                            <a
+                                href="cart.html"
+                                class="header-li-a header-li-a--active"
                                 ><i class="fa-solid fa-cart-shopping"></i
                             ></a>
                         </li>
@@ -71,123 +70,144 @@
         </section>
         <!-- ============ hero =============== -->
         <section class="hero">
-            <div class="about-hero-body">
-                <h2 class="shop-hero-h2">#Know Us</h2>
+            <div class="contact-hero-body">
+                <h2 class="shop-hero-h2">#lest's_talk</h2>
                 <p class="shop-hero-p desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Totam, aliquid!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Facere fugiat veniam nemo.
                 </p>
             </div>
         </section>
 
-        <!-- =================== about-head ====================== -->
-        <section class="about section-p1" id="about">
-            <div class="about-body">
-                <img
-                    src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/about/a6.jpg?raw=true"
-                    alt=""
-                    class="about-img"
-                />
-                <div class="about-bot">
-                    <h2 class="about-h2">Who we are?</h2>
-                    <p class="about-p">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Numquam similique, placeat veniam debitis suscipit
-                        reprehenderit ullam eveniet. Odio ad repellendus non
-                        officia. Recusandae vero dolore doloribus nisi, tempore
-                        sequi vel, minus hic dolor, voluptate laboriosam. Vel,
-                        porro facere. Maxime officia modi corrupti tempora
-                        voluptatem similique nobis ducimus corporis
-                        necessitatibus accusantium. Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit. Nostrum ex nobis sequi,
-                        consectetur accusamus sapiente!
+            <!-- ============ cart ============= -->
+        <section class="cart section-p1" id="cart">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>REMOVE</th>
+                        <th>IMAGE</th>
+                        <th>PRODUCT</th>
+                        <th>PRICE</th>
+                        <th>QUANTITY</th>
+                        <th>SUBTOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- box1 -->
+                    <tr>
+                        <td>
+                            <a href="#" class="cart-table-link"
+                                ><i class="fa-regular fa-circle-xmark"></i
+                            ></a>
+                        </td>
+                        <td>
+                            <img
+                                src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f1.jpg?raw=true"
+                                alt=""
+                                class="table-tr-img"
+                            />
+                        </td>
+                        <td>Cartoon Astronaut T-Shirts</td>
+                        <td>$118.19</td>
+                        <td>
+                            <input
+                                type="number"
+                                value="1"
+                                name=""
+                                id=""
+                                class="cart-table-input"
+                            />
+                        </td>
+                        <td>$118.19</td>
+                    </tr>
+
+                    <!-- box2 -->
+                    <tr>
+                        <td>
+                            <a href="#" class="cart-table-link"
+                                ><i class="fa-regular fa-circle-xmark"></i
+                            ></a>
+                        </td>
+                        <td>
+                            <img
+                                src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f2.jpg?raw=true"
+                                alt=""
+                                class="table-tr-img"
+                            />
+                        </td>
+                        <td>Cartoon Astronaut T-Shirts</td>
+                        <td>$118.19</td>
+                        <td>
+                            <input
+                                type="number"
+                                value="1"
+                                name=""
+                                id=""
+                                class="cart-table-input"
+                            />
+                        </td>
+                        <td>$118.19</td>
+                    </tr>
+
+                    <!-- box3 -->
+                    <tr>
+                        <td>
+                            <a href="#" class="cart-table-link"
+                                ><i class="fa-regular fa-circle-xmark"></i
+                            ></a>
+                        </td>
+                        <td>
+                            <img
+                                src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f3.jpg?raw=true"
+                                alt=""
+                                class="table-tr-img"
+                            />
+                        </td>
+                        <td>Cartoon Astronaut T-Shirts</td>
+                        <td>$118.19</td>
+                        <td>
+                            <input
+                                type="number"
+                                value="1"
+                                name=""
+                                id=""
+                                class="cart-table-input"
+                            />
+                        </td>
+                        <td>$118.19</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ================== bill ================== -->
+        <section class="bill section-p1">
+            <div class="bill-body">
+                <h3 class="bill-body-h3">Apply Coupon</h3>
+                <input type="text" name="" id="" class="bill-body-input" placeholder="Enter Your Coupon">
+                <span class="bill-btn btn">Apply</span>
+            </div>
+        </section>
+
+        <!-- ============= newletter ============== -->
+        <section class="newletter" id="newletter">
+            <div class="new-body section-p1">
+                <div class="newstext">
+                    <h4 class="new-h4">Lorem ipsum dolor sit amet.</h4>
+                    <p class="new-p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        <span>elit. Velit, quo?</span>
                     </p>
-                    <abbr title="lập trình web"
-                        >Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Vero hic eveniet illum ratione exercitationem
-                        aliquam id voluptatibus ad corrupti magnam.</abbr
-                    >
-
-                    <br /><br />
-
-                    <marquee
-                        bgcolor="#ccc"
-                        behavior=""
-                        direction=""
-                        loop="-1"
-                        scrolldelay="5"
-                        width="100%"
-                        >Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Vero hic eveniet illum ratione exercitationem
-                        aliquam id voluptatibus ad corrupti magnam.</marquee
-                    >
                 </div>
-            </div>
-        </section>
-                    <!-- ====== about app ======= -->
-        <section class="about-app section-p1">
-            <h1 class="about-app-h1">
-                Download Our
-                <a href="" download="" class="about-download">App</a>
-            </h1>
-            <div class="about-video">
-                <video
-                autoplay
-                muted
-                loop src="./assets/img/1.mp4"></video>
-            </div>
-        </section>
-
-         <!-- ================ feature ================== -->
-        <section class="feature section-p1">
-            <div class="fe-body">
-                <div class="fe-box">
-                    <img
-                        src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/features/f1.png?raw=true"
-                        alt=""
-                        class="fe-img"
+                <div class="form">
+                    <input
+                        class="new-form-input"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Your email address"
                     />
-                    <div class="fe-desc h6">Free Shipping</div>
-                </div>
-                <div class="fe-box">
-                    <img
-                        src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/features/f2.png?raw=true"
-                        alt=""
-                        class="fe-img"
-                    />
-                    <div class="fe-desc h6">Online Order</div>
-                </div>
-                <div class="fe-box">
-                    <img
-                        src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/features/f3.png?raw=true"
-                        alt=""
-                        class="fe-img"
-                    />
-                    <div class="fe-desc h6">Save Money</div>
-                </div>
-                <div class="fe-box">
-                    <img
-                        src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/features/f4.png?raw=true"
-                        alt=""
-                        class="fe-img"
-                    />
-                    <div class="fe-desc h6">Promotions</div>
-                </div>
-                <div class="fe-box">
-                    <img
-                        src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/features/f5.png?raw=true"
-                        alt=""
-                        class="fe-img"
-                    />
-                    <div class="fe-desc h6">Happy Sell</div>
-                </div>
-                <div class="fe-box">
-                    <img
-                        src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/features/f6.png?raw=true"
-                        alt=""
-                        class="fe-img"
-                    />
-                    <div class="fe-desc h6">F24/7 Support</div>
+                    <button class="new-button btn">Sign Up</button>
                 </div>
             </div>
         </section>
