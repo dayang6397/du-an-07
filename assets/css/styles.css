@@ -894,7 +894,7 @@ h6 {
 
 /* =============== contact.html ================ */
 .contact-hero-body {
-    background-image: url(https://images.unsplash.com/photo-1556742212-5b321f3c261b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-image: url(https://media.istockphoto.com/id/1310708362/photo/wooden-cubes-with-mail-phone-and-email-icons-on-table-yellow-background-contact-u-sand.jpg?s=612x612&w=0&k=20&c=EpBU5hKdHPVd_CyCGXdLysI1AV_k-ej9SpCOWJvhUVc=);
     width: 100%;
     height: 30rem;
     background-size: cover;
@@ -1032,6 +1032,17 @@ h6 {
 /* =================================================================================================================================== */
 
 /* =============== cart.html ================ */
+.cart-hero-body{
+     background-image: url(https://images.unsplash.com/photo-1634733988138-bf2c3a2a13fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmlsbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    width: 100%;
+    height: 30rem;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .cart {
     width: 100%;
     border-collapse: collapse;
